@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portafolio</title>
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="estilo.css">
+
+
+  <!-- Estilos internos -->
+  <style>
+    h1, h2, h3, h4, h5 {
+      color: rgb(0, 236, 253);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container my-4">
+
+    <header class="mb-4">
+      <h1 id="top">Portafolio de Gil Micaela</h1>
+    </header>
+
+    <nav class="mb-4">
+      <ul>
+        <li><a href="#Miinfo">Sobre Mí</a></li>
+        <li><a href="#Proyectos">Desarrollo de cada proyecto</a></li>
+        <li><a href="#Resultado">Resultado final</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <article>
+
+        <!-- SOBRE MI -->
+        <h2 id="Miinfo">Sobre Mí</h2>
+
+        <!-- CARD -->
+        <div class="row my-4">
+          <div class="col-12 col-md-6">
+            <div class="card">
+
+              <img src="Img/Micu.jpg" class="card-img-top" alt="Alumna Gil Micaela">
+
+              <div class="card-body">
+                <h5 class="card-title">Gil Micaela</h5>
+                <p class="card-text">
+                  Soy estudiante de Lic. en Diseño Multimedial en...
+                </p>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMica">
+                  Ver más
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="modalMica" tabindex="-1" aria-labelledby="modalMicaLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+      
+
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMicaLabel">Gil Micaela</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="Img/Micu.jpg" class="img-fluid mb-3" alt="Alumna Gil Micaela">
+                Soy estudiante de Lic. en Diseño Multimedial en la Facultad de Arte de la UNLP, tengo 31 años y
+          estoy en primer año, dando mis primeros pasos en el mundo del diseño digital.
+          A continuación se encuentran los proyectos realizados durante la cursada del año 2025.
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- PROYECTOS -->
+        <h3 id="Proyectos" class="mt-5">Desarrollo de cada proyecto</h3>
+
+        <ul>
+          <li>
+            <strong>Aventura Gráfica "Teseo y el Minotauro":</strong>
+            Proyecto grupal interactivo basado en un mito griego con decisiones SI/NO y múltiples finales.
+            Imágenes creadas con Google Gemini y sonido para una experiencia inmersiva.
+          </li>
+
+          <li>
+            <strong>Aventura Gráfica Interactiva Web:</strong>
+            Proyecto grupal realizado con Bootstrap, incorporando modales y la aventura gráfica.
+          </li>
+
+          <li>
+            <strong>Proyecto Web "Manifestación a través de la Neurociencia":</strong>
+            Landing page individual realizada por mí, inspirada en el libro "Deja de ser tú" de Joe Dispenza.
+          </li>
+
+          <li>
+            <strong>OpArt con Funciones propias y Ciclo For en p5.js:</strong>
+            Obra OP ART interactiva utilizando ciclos for y funciones propias.
+          </li>
+
+          <li>
+            <strong>Proyecto web de Canal de Stream:</strong>
+            Proyecto individual en el que realicé una página web para un canal de Streaming. 
+           </li>
+
+           <li>
+            <strong>Rediseño de App: </strong>
+            Proyecto grupal en el cual rediseñamos la homepage, la sección de búsqueda y creamos un watchParty. Mi participación fue en el WatchParty.    
+           </li>
+
+           <li>
+            <strong>Videojuego</strong>
+            Proyecto grupal en el cual creamos un videojuego de dos Divas estilo combate. Mi participación fue en el área de Diseño (Logo y HUD).  
+           </li>
+        </ul>
+
+        <!-- RESULTADO FINAL -->
+        <h4 id="Resultado" class="mt-5">Resultado Final</h4>
+
+        <div class="row my-4">
+          <p>
+            <strong>Aventura Gráfica "Teseo y el Minotauro":</strong>
+          </p>
+          <iframe src="p5/index.html" width="690" height="580"></iframe>
+        </div>
+
+        <div class="row my-4">
+          <p>
+            <strong>Proyecto Web de la Aventura Gráfica Interactiva:</strong>
+          </p>
+          <video width="690" height="580" controls>
+            <source src="Video/Aventura Grafica y web.mp4" type="video/mp4">
+          </video>
+        </div>
+
+         <div class="row my-4">
+          <p>
+            <strong> Landing Page: "Manifestación a través de la Neurociencia"</strong>
+           </p>
+          <video width="690" height="580" controls>
+            <source src="Video/videolandingpage.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="row my-4">
+          <p>
+            <strong>Obra OP Art con funciones propias y ciclo for:</strong>
+          </p>
+          <video width="690" height="580" controls>
+            <source src="Video/OpArt.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="row my-4">
+          <p>
+            <strong>Proyecto web de Canal de Stream::</strong>
+          </p>
+          <video width="690" height="580" controls>
+            <source src="Video/videodestream.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </article>
+
+      <!-- ASIDE -->
+      <aside class="mt-5">
+        <h5>Áreas en las que tengo experiencia</h5>
+        <p>
+          HTML, CSS, JavaScript y Java (Processing).
+          Manejo de Visual Studio Code, GitHub, GitHub Pages, Neocities, Figma, Canva, Power Bi y Microsoft Office.
+          Uso de frameworks como Bootstrap.
+        </p>
+      </aside>
+
+    </section>
+
+    <footer class="mt-5">
+      <h6>
+        <strong>© 2026 Gil Micaela </strong>
+        <p>
+ <strong>Realizado con HTML y CSS.</strong>
+        </p>
+       
+      </h6>
+    </footer>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
